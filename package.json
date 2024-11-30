@@ -3,12 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:success_login": "npx playwright test tests/success_login.spec.ts",
+    "test:failed_login": "npx playwright test tests/failed_login.spec.ts",
+    "test:checkout": "npx playwright test tests/checkout.spec.ts"
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.49.0",
     "@types/node": "^22.10.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
